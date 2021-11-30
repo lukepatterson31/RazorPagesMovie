@@ -19,6 +19,7 @@ namespace RazorPagesMovie.Pages.Movies
             _context = context;
         }
 
+        // ReSharper disable once UnusedMember.Global
         public IActionResult OnGet()
         {
             return Page();
@@ -28,6 +29,7 @@ namespace RazorPagesMovie.Pages.Movies
         public Movie Movie { get; set; }
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
+        // ReSharper disable once UnusedMember.Global
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
